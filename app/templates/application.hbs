@@ -1,0 +1,20 @@
+{{page-title 'App One'}}
+
+<NavBar />
+
+<div class='py-4 text-center'>
+  <h4>
+    This App is authenticated with Auth0 and has a localStorage.
+  </h4>
+</div>
+<div class='container'>
+  {{! template-lint-disable deprecated-inline-view-helper }}
+  <JsonEditor
+    @json={{this.localStorage}}
+    @name={{'Auth0 object'}}
+    @mode={{'view'}}
+    @expand={{true}}
+  />
+</div>
+
+{{outlet}}
