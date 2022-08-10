@@ -19,6 +19,6 @@
     > **Note:** Coming soon
 
 6. **Video**
-    > **Note:** Coming soon
+    Full demo video ([Link](https://drive.google.com/file/d/1c9B88l7zdDwZKNz62mITRmNto895T_HM/view?usp=sharing))
 
 Please reach out to me if you find any difficulty with this setup or have any sort of questions.
