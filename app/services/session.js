@@ -70,6 +70,7 @@ export default class Auth0Service extends Service {
 
     let result = await this.auth0.handleRedirectCallback();
     this.isAuthenticated = await this.auth0.isAuthenticated();
+    // QUESTION: does this work on Safari? We've had issues in the past using `?` in Safari
     this.appState = result?.appState;
 
     return result;
@@ -109,6 +110,7 @@ export default class Auth0Service extends Service {
         }
       }
     } else {
+      // QUESTION: should this be setting this.isAuthenticated to false too?
       return null;
     }
   }
