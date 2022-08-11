@@ -7,6 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
+  // QUESTION: Why the need to reset the namespace?
   this.route('login', { resetNamespace: true });
   this.route('logout', { resetNamespace: true });
 });
