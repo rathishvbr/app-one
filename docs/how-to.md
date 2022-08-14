@@ -13,12 +13,9 @@
             Simply run the `http://one.app.localhost:4200` and it'll redirect to the `Athu0` login screen where we can create an account, then the application will be redirected to the index page where the whole object from `Auth0` will be displayed, At the top, there will be a link to go to the App Two, Once we open the App Two the token from the App One will be shared, App Two will display the token, App Two configured with `ember-data` and `ember-cli-mirage` , Check the console (`ember-cli-mirage` show logs in console not in the network tab) to find out request header with `Authorization: Bearer {token}` 
 
 4. **Qunit test cases**
-    > **Note:** I will add the test cases
+    Test cases are written for App Two, since it has some reasonable test scenarios here is the [commit](https://github.com/rathishvbr/app-two/commit/191ce7275a0b7abb8e0a957b0832ade7be1a590e), Testing for App one isn't needed in my opinion since the session service playing the main role there and it's totally consumer of `@auth0/auth0-spa-js`.
 
-5. **Images**
-    > **Note:** Coming soon
-
-6. **Video**
+5. **Video**
     Full demo video ([Link](https://drive.google.com/file/d/1c9B88l7zdDwZKNz62mITRmNto895T_HM/view?usp=sharing))
 
 Please reach out to me if you find any difficulty with this setup or have any sort of questions.
