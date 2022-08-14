@@ -7,6 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('login', { resetNamespace: true });
-  this.route('logout', { resetNamespace: true });
+  this.route('login');
+  this.route('logout');
 });
